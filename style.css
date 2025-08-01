@@ -1,0 +1,259 @@
+.bodyIndex {
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	grid-template-rows: 20% 68% 12%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+.bodyCommand {
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	grid-template-rows: 88% 12%;
+}
+.commandPanel {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	font: size 15px;
+}
+.objectPanel {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.objectPanel img {
+	width: 100%;
+}
+.menuPanel {
+	display: flex;
+	justify-content: center;
+}
+.menuButton img {
+	width: auto;
+	height: 60px;
+}
+.menuButton {
+	margin-left: 10px;
+	margin-right: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.menuText {
+	text-decoration: none;
+	color: black;
+	font-family: "MyFont";
+}
+.topScorePanel {
+	height: 60%;
+}
+.energy {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.energy img {
+	width: 30px;
+	position: relative;
+	z-index: 10;
+}
+#energyBox {
+	width: 70px;
+	height: 20px;
+	border-radius: 7px;
+	background-color: rgb(0, 183, 255);
+	color: rgb(0, 255, 191);
+	font-weight: 600;
+	font-style: italic;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+#energyFill {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	border-radius: 7px;
+	background: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(0, 0, 0) 100%);
+}
+#energyText {
+	z-index: 5;
+}
+.centerScorePanel {
+	height: 25%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.centerScorePanel img {
+	width: 40px;
+}
+#score {
+	font-weight: 600;
+	color: rgb(0, 110, 255);
+	font-size: 36px;
+	margin-top: 10px;
+}
+.bottomScorePanel {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	margin-top: 10px;
+	color: rgb(0, 110, 255);
+	font-weight: 600;
+}
+.plus {
+	position: absolute;
+	color: rgb(0, 132, 255);
+	font-weight: 600;
+	font-size: 18px;
+	animation: moveUp 2s forwards;
+}
+@keyframes moveUp {
+	0% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(-100px);
+		opacity: 0;
+	}
+}
+.upgCards {
+	padding: 20px;
+	width: calc(100vw - 40px);
+}
+.caption {
+	font-size: 17px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.card {
+	width: 28%;
+	height: 120px;
+	background-color: rgb(0, 162, 255);
+	border-radius: 7px;
+	color: black;
+	font-size: 13px;
+	font-weight: 600;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+.containerUpgCards {
+	display: flex;
+	justify-content: space-between;
+}
+.imageCard {
+	width: 100%;
+	height: 120px;
+	border-radius: 10px;
+	margin-top: 5%;
+}
+.imageCard p {
+	background-color: rgb(0, 162, 255);
+	width: 40px;
+	border-radius: 5px;
+	margin-left: 5px;
+	padding-top: 2px;
+}
+.card:nth-child(1) .imageCard {
+	background-image: url(pngwing.com\ 5.png);
+	background-size: cover;
+}
+.card:nth-child(2) .imageCard {
+	background-image: url(pngwing.com\ 8.png);
+	background-size: cover;
+}
+.card:nth-child(3) .imageCard {
+	background-image: url(pngwing.com\ 7.png);
+	background-size: cover;
+}
+.dialog {
+	position: fixed;
+	inset: auto 0 0 0;
+	border: 2px solid;
+	border-bottom: 0px;
+	width: calc(100% - 44px);
+	height: 70vh;
+	border-radius: 20px 20px 0 0;
+	background: linear-gradient(
+		150deg,
+		rgb(0, 162, 255) 0%,
+		rgb(0, 204, 255) 100%
+	);
+	padding: 20px;
+}
+.imgDialog {
+	width: 90%;
+	height: 40%;
+}
+.textContainer img {
+	width: 20px;
+	margin-left: 15px;
+}
+form {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.closeButton {
+	width: 30px;
+	height: 30px;
+	padding: 5px;
+	border-radius: 50px;
+	border: 0px;
+	font-weight: 600;
+	font-size: 17px;
+	color: rgb(163, 0, 0);
+	align-self: flex-end;
+	background-color: aqua;
+}
+.textContainer {
+	display: flex;
+	border-radius: 5px;
+	width: 45px;
+	justify-content: center;
+	align-items: center;
+	color: azure;
+}
+.pay {
+	width: 90%;
+	height: 6vh;
+	background-color: rgb(0, 110, 255);
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 0px;
+	border-radius: 20px;
+}
+::backdrop {
+	background-color: rgba(0, 255, 255, 0.658);
+}
+.passiveContainer {
+	width: calc(100vw - 40px);
+	white-space: nowrap;
+	overflow-x: auto;
+}
+.cardPassive {
+	display: inline-block;
+	margin-right: 12px;
+}
+.passiveContainer::-webkit-scrollbar {
+	display: none;
+}
